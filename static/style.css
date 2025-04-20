@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #fff;
+}
+
+.shop-header {
+    background-color: #ffe0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.ribbon {
+    width: 80px;
+    height: auto;
+}
+
+.ribbon.left {
+    margin-right: 10px;
+}
+
+.ribbon.right {
+    margin-left: 10px;
+}
+
+.main-logo {
+    width: 150px;
+    height: auto;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.img-placeholder {
+    height: 100px;
+    background-color: #f0f0f0;
+    line-height: 100px;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 600px) {
+    .ribbon {
+        width: 60px;
+    }
+
+    .main-logo {
+        width: 120px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.cart-icon img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.cart-icon img:hover {
+    transform: scale(1.1);
+}
+
+
+
